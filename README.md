@@ -156,36 +156,34 @@ Each query in this project is aimed at investigating different aspects of the Da
       - **All in ($USD)**
     - This shows the differing range of salaries for jobs in the same field and how capitalizing on different skills sets can lead to vastly different outcomes in salary earned per year
 
+
 5) **Most profitable skill** Comparing sum of jobs with their skills by salary average.
    ```sql
       SELECT
-        sd.skills,
-        skill_counts.skill_id,
-        skill_counts.job_count,
-        CAST(skill_counts.avg_yearly_salary AS INT) AS avg_yearly_salary
-      FROM (
-        SELECT
-          sjd.skill_id,
-          COUNT(jpf.job_id) AS job_count,
-          AVG(jpf.salary_year_avg) AS avg_yearly_salary
-        FROM
+        skills,
+        sd.skill_id,
+        COUNT(jpf.job_id),
+        CAST(AVG(salary_year_avg) AS INT) AS avg_yearly_salary
+      FROM
           job_postings_fact jpf
-        LEFT JOIN 
-          skills_job_dim sjd ON jpf.job_id = sjd.job_id
-        WHERE 
-          jpf.salary_year_avg IS NOT NULL
-        GROUP BY 
-          sjd.skill_id
-      ) AS skill_counts 
-      LEFT JOIN skills_dim sd ON skill_counts.skill_id = sd.skill_id
+      LEFT JOIN skills_job_dim sjd ON jpf.job_id = sjd.job_id
+      LEFT JOIN skills_dim sd ON sjd.skill_id = sd.skill_id
       WHERE 
-        skill_counts.job_count > 10
-      ORDER BY 
-        skill_counts.avg_yearly_salary DESC, 
-        skill_counts.job_count DESC
+        salary_year_avg IS NOT NULL
+        AND job_title_short = 'Data Analyst'
+      GROUP BY
+         skills,
+         sd.skill_id,
+         salary_year_avg
+      HAVING COUNT(jpf.job_id) > 10
+      ORDER BY avg_yearly_salary DESC
    ```
-
+# The results show 
+  - AWS, Spark, SQL and Python come in at the highest annual salary rates at $165,000 (USD)
+  - Closely followed by PowerBI at number 5 with an annual salary rate of $150,000 (USD)
+  - The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD)
+  - This shows even with the same skills, salary growth in the field as a data analyst is not only realistic, but very consistent due to the number of jobs avaialble per skill with different salary ranges 
  
 # WHAT I LEARNED
 
-CONCLUSIONS 
+# CONCLUSIONS 
