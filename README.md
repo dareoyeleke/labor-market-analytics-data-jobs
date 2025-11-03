@@ -1,4 +1,4 @@
-# sql_queries_colab
+# sql_project_data_analysis_jobs 
 SQL queries using google colab and %sql magic along with python scripting to import pandas, os, matplot for data parsing with ease
 
 
