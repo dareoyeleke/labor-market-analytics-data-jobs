@@ -30,7 +30,7 @@ For my dive into the data analyst job market, I used several key tools including
 
 # The ANALYSIS
 Each query in this project is aimed at investigating different aspects of the Data analyst job market 
-1) **Top paying Data Analyst Jobs** - To identify the highest paying roles by filtering data analyst positions by average yearly salary, degree requirement and location.
+### 1) Top paying Data Analyst Jobs - To identify the highest paying roles by filtering data analyst positions by average yearly salary, degree requirement and location.
   ```sql
     SELECT
       name AS company_name,
@@ -47,13 +47,17 @@ Each query in this project is aimed at investigating different aspects of the Da
     ORDER BY salary_year_avg DESC
     LIMIT 100
   ```
-# The results show
-- **Wide Salary range** From $40 - $650 thousand (USD) indicating significant potential salaries in the field
-- **Diverse employers** From Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analyst skills
-- **Job Variety** Along with diverse employers, diverse job titles show diverse job roles in finance, tech, management to name a few
 
 
-2) **Top paying skills** -  Building on the last query, adding the specific skills needed for said jobs to help understand what skills are required to get those jobs to encourage guided effort towaards building those skills
+**The results show**
+  - Wide Salary range From $40 - $650 thousand (USD) indicating significant potential salaries in the field
+  - Diverse employers From Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analyst skills
+  - Job Variety Along with diverse employers, diverse job titles show diverse job roles in finance, tech, management to name a few
+
+
+
+
+### 2) Top paying skills :: Building on the last query, adding the specific skills needed for said jobs to help understand what skills are required to get those jobs to encourage guided effort towaards building those skills
   ```sql
     WITH data_analyst_jobs AS
     (
@@ -98,7 +102,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     ORDER BY
       salary_year_avg DESC
   ```
-# The results show
+**The results show**
 - The top skills are SQL,excel and POWERBI with salaries of $118,640(USD) per annum in USD with the company Invernegy.
 - Coming in second are Python as a skill and two of it's libraries numpy and panda along with SQL, zoom and slack at $100,500(USD) for Udacity Inc
 - Lastly American National pay $59,500(USD) for Data Analyst jobs with SQL and tablue skills respectively.
@@ -106,7 +110,10 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 
-3) **Country Specific or remote jobs** Query to find skills and no of jobs per skill for Data Analyst jobs that are in the US or are remote jobs
+
+
+
+### 3) Country Specific or remote jobs :: Query to find skills and no of jobs per skill for Data Analyst jobs that are in the US or are remote jobs
   ```sql
     SELECT
       skills,
@@ -123,13 +130,17 @@ Each query in this project is aimed at investigating different aspects of the Da
     GROUP BY sd.skills, sd.skill_id
     ORDER BY skill_count DESC
   ```
-# The results show 
-    - Python and sql are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
-    - Following the top two skills, we see a steep drop in the mention for aws and azure skills at 18,286 and 13,928  respectively
+ **The results show**
+  - Python and sql are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
+  - Following the top two skills, we see a steep drop in the mention for aws and azure skills at 18,286 and 13,928  respectively
 
 
 
-4) **Average salary by skill** The next Query pulls data from the table for the average pay for each skill for remote Data analyst jobs
+
+
+
+
+### 4) Average salary by skill :: The next Query pulls data from the table for the average pay for each skill for remote Data analyst jobs
   ```sql
     SELECT
       skills,
@@ -145,7 +156,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     GROUP BY sd.skills
     ORDER BY AVG(salary_year_avg) DESC
   ```
-# The results show
+**The results show**
   - The top five skills differ from the past 3 result sets by showing niche skills such as
     - Pyspark (python BASED API, an open source framework for machine learning and big data analytics) with an average salary of $208,172
     - Bitbucket(Git based coding platform for hosting, managing and collaborating using git repositories) at $189,155,
@@ -157,7 +168,11 @@ Each query in this project is aimed at investigating different aspects of the Da
     - This shows the differing range of salaries for jobs in the same field and how capitalizing on different skills sets can lead to vastly different outcomes in salary earned per year
 
 
-5) **Most profitable skill** Comparing sum of jobs with their skills by salary average.
+
+
+
+
+### 5) Most profitable skill: Comparing sum of jobs with their skills by salary average.
    ```sql
       SELECT
         skills,
@@ -178,12 +193,23 @@ Each query in this project is aimed at investigating different aspects of the Da
       HAVING COUNT(jpf.job_id) > 10
       ORDER BY avg_yearly_salary DESC
    ```
-# The results show 
+**The results show** 
   - AWS, Spark, SQL and Python come in at the highest annual salary rates at $165,000 (USD)
   - Closely followed by PowerBI at number 5 with an annual salary rate of $150,000 (USD)
   - The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD)
   - This shows even with the same skills, salary growth in the field as a data analyst is not only realistic, but very consistent due to the number of jobs avaialble per skill with different salary ranges 
+
+
+
+
+
  
 # WHAT I LEARNED
+**Throughout this adventure, I've really put some gas into honing my SQL skills**
+
+- Complex Query Crafting: I have built advanced SQL skills, merged tables like a pro and used the CTE WITH clause for expert table maneuvers.
+- Data Aggregation: I got really comfortable using COUNT(), AVG() and pairing them with GROUP BY() functions to effectively summarize data 
+- Analytical Magic: I actively honed my real world data-parsing and processing skills, taking questions, tackling raw data, and providing insightful answers with SQL queries
+
 
 # CONCLUSIONS 
