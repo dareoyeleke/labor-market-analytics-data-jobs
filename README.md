@@ -213,3 +213,12 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 # CONCLUSIONS 
+
+### Insights
+  1) **Top Paying Data Analyst Jobs**
+  2) **Skills for Top-paying Jobs**
+  3) **Most In-Demand Skills**
+  4) **Skills with Higher Salaries**
+  5) **Optimal Skills for Job Market Value**
+
+### Closing Thoughts
