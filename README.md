@@ -4,7 +4,10 @@ SQL · Power BI · Workforce & Compensation Insights
 
 Executive Summary
 
-This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration, transforming raw job data into decision-ready workforce insights. Check it out here ([sql_basics_project.ipynb]
+<img width="1920" height="1080" alt="DATA JOBS DASHBOARD 2 0" src="https://github.com/user-attachments/assets/0d6a31da-55ef-44a3-af7b-1aba138d5bc6" />
+
+
+This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration, transforming raw job data into decision-ready workforce insights. Check it the raw code here ([sql_basics_project.ipynb]
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
@@ -88,6 +91,9 @@ Implemented slicers, bookmarks, and navigation for usability
 Applied conditional formatting and visual hierarchy for clarity
 
 Key Insights
+
+<img width="1920" height="1080" alt="DATA JOBS SALARY ADJUSTABLE 2 0" src="https://github.com/user-attachments/assets/4d9c8632-1d0e-49b4-ad64-39497221c577" />
+
 
 Compensation is role-stratified: Specialized and senior data roles consistently command higher pay.
 
