@@ -18,7 +18,7 @@ Using SQL for data extraction and transformation and Power BI for interactive re
 
 ## 📂 Data Source
 
-Hugging Face - Account Creation Required, Dataset Constantly chnaging due to increase in Job Postings 
+Hugging Face - Account Creation Required, Dataset Constantly changing due to increase in Job Postings by increased Bot Scrapping.  
 
 🔗 https://huggingface.co/datasets/lukebarousse/data_jobs/blob/main/data_jobs.csv
 
