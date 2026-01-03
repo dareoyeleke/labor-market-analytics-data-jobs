@@ -11,17 +11,15 @@ This project delivers an end-to-end labor market analysis of the data jobs ecosy
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
+### SQL Script used to query Data can be acces at
+
 🔗 SQL analysis notebook: 
 -  (https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/sql_basics_project.ipynb)
 
-Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
+### 📂 Data Source
+File Used
 
-## 📂 Data Source
-
-Hugging Face - Account Creation Required, Dataset Constantly changing due to increase in Job Postings by increased Bot Scrapping.  
-
-🔗 https://huggingface.co/datasets/lukebarousse/data_jobs/blob/main/data_jobs.csv
-
+🔗 https://lukeb.co/sql_jobs_db
 
 **Business Questions**
 
@@ -143,7 +141,9 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 ## ⚙️ How to Reproduce
 ### Requirements
 
--  PostgreSQL
+-  Access Link [https://lukeb.co/sql_jobs_db]
+
+-  SQL notebook (https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/sql_basics_project.ipynb) for queries used
 
 -  VSCode (optional)
 
@@ -151,11 +151,11 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 ## Steps
 
--  Clone this repository
+-  SQL notebook can be used to derive data by running queries from SQL notebook
 
--  Load the dataset into PostgreSQL
+-  Export CSV's after acquiring data provided from SQL queries
 
--  Run the SQL files in the /sql folder
+-  CSV's can be loaded into PowerBI from Visual and Dashboard Creation
 
 -  Explore queries and modify filters for deeper analysis
 
