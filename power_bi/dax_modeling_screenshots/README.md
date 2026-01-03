@@ -1,6 +1,12 @@
 # DAX Modeling Screenshots
 
-This folder contains screenshots documenting DAX measures, parameter tables,
-and semantic model logic used in the labor market analytics dashboard.
+## Power BI Modeling & DAX Highlights
 
-These artifacts are provided for technical review and interview discussion.
+**This folder contains curated screenshots demonstrating:**
+- Report navigation and UX design
+- Star schema vs group-by modeling approaches
+- Time-series analysis of job postings
+- Compensation vs demand tradeoffs
+- Derived metrics linking skill density to salary outcomes
+
+Raw exports and exploratory visuals are archived separately.
