@@ -51,7 +51,13 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 **1️⃣ Data Extraction & Transformation (SQL)**
 
--  Queried and analyzed job-posting data using PostgreSQL
+-  Queried and analyzed job-posting data using PostgreSQL for Database creation on public schemas
+
+-  Pandas, Matplotlib and sys were installed 
+
+-  %%sql magic was used to convert results of SQL in pandas Dataframes
+
+-  CSV files were mounted from Google drive to populate Database and fill tables    
 
 **Applied:**
 
@@ -137,6 +143,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  Visualization: ArcGIS Maps 🌍, KPI visuals, trend charts
 
 -  Workflow: GitHub version control, reproducible queries
+
 
 ## ⚙️ How to Reproduce
 ### Requirements
