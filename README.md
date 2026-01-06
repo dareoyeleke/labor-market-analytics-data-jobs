@@ -193,11 +193,11 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  Full CSV's data source can be loaded into PowerBI for remaining Visual and Dashboard Creation
 
 -  The following Visuals (All in the main repository file) were created with the queries from the SQL notebook linked above
-  -    Top 10 Salaries.PNG
-  -    Top 10 Skill Counts.PNG
-  -    Top Skills for Top Paying Data Analyst Jobs.PNG
-  -    Top and Bottom 5 Average Salaries Per skill Count.PNG
-  -    Top and bottom 5 Average Salary per Skill.PNG
+    -    Top 10 Salaries.PNG
+    -    Top 10 Skill Counts.PNG
+    -    Top Skills for Top Paying Data Analyst Jobs.PNG
+    -    Top and Bottom 5 Average Salaries Per skill Count.PNG
+    -    Top and bottom 5 Average Salary per Skill.PNG
 
 -  The remaining visuals (Dashboard, Median Hourly and Yearly Salary i.e Visual 2 on this page) were created using the Dim tables attached in the Data Source above
 
