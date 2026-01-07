@@ -1,22 +1,26 @@
 # 📊 Labor Market Analytics: Data Jobs
-
+<br><br>
 ## SQL · Power BI · Workforce & Compensation Insights
-
-### Executive Summary
+<br><br>
+## Executive Summary
 
 <img width="1920" height="1080" alt="DATA JOBS DASHBOARD 2 0" src="https://github.com/user-attachments/assets/0d6a31da-55ef-44a3-af7b-1aba138d5bc6" />
+
+
+<br><br>
 
 
 This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration—transforming raw job-posting data into decision-ready workforce insights.
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
-### SQL Script used to query Data can be acces at
+### SQL Script used to query Data can be accessed at
 
 🔗 SQL analysis notebook: 
 -  (https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/sql_basics_project.ipynb)
+<br>
 
-### 📂 Data Source
+## 📂 Data Source
 
 🔗 Dim tables for SQL note book queries [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/US%20Data%20Analyst%20Jobs%20Query%20Results.ipynb] and Power Bi full Dashboard and visual creation. 
   - https://drive.google.com/file/d/1yXsGDorVWuDtFeTo1NnLLODDBT4P0JCf/view?usp=drive_link "skills_job_dim.csv"
@@ -24,8 +28,8 @@ Using SQL for data extraction and transformation and Power BI for interactive re
   - https://drive.google.com/file/d/1yTEGzAQ6fXYRAWjSgwAv3bYarIKV7hlE/view?usp=drive_link "skills_dim.csv"
   - https://drive.google.com/file/d/1yQcTBR-6_OOv9QPz-swjXjheyAgvRfAL/view?usp=drive_link "job_postings_fact.csv"
   
-
-**Business Questions**
+<br><br>
+## Business Questions
 
 This analysis was designed to answer practical, stakeholder-relevant questions such as:
 
@@ -38,8 +42,10 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  How do remote and location-based roles differ in salary structure?
 
 -  What insights can inform hiring strategy and workforce planning?
+  
+<br>
 
-**Data Overview**
+## Data Overview
 
 -  Records: 497,000+ job postings
 
@@ -51,7 +57,9 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  Salary data was standardized to enable consistent cross-role and geographic comparisons.
 
-### Methodology
+<br>
+
+## Methodology
 
 **1️⃣ Data Extraction & Transformation (SQL)**
 
@@ -123,10 +131,12 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  Applied conditional formatting and visual hierarchy for clarity
 
-**Key Insights**
+<br><br>
+
+## Key Insights
 
 <img width="1920" height="1080" alt="DATA JOBS SALARY ADJUSTABLE 2 0" src="https://github.com/user-attachments/assets/4d9c8632-1d0e-49b4-ad64-39497221c577" />
-
+<br><br>
 
 -  **Compensation is role-stratified:** Specialized and senior data roles consistently command higher pay.
 
@@ -136,9 +146,11 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  **Remote vs on-site dynamics differ:** Salary and demand patterns vary meaningfully between remote and location-based roles. On-site roles also greatly outweigh postings or Remote roles
 
--  **Skill Distribution in regards to compenstion:** Certain Niche or low supply skills have higher compensation. 
+-  **Skill Distribution in regards to compenstion:** Certain Niche or low supply skills have higher compensation.
 
-### Dashboard Capabilities
+
+
+## Dashboard Capabilities
 
 **The Power BI dashboard enables users to:**
 
@@ -152,17 +164,18 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 (Representative dashboard screenshots are included in the repository.)
 
-### Additional visuals Catered to US Data Analysts enable us to 
+### Additional visuals Catered to US Data Analysts enable us to: 
 
 -  Compare Trends in skills and required number of possesed skills for highest and lowest paying jobs
--
+
 -  Compare skill demands across jobs as well as skill compensation
 
 -  Compare demand in remote vs on-site jobs
 
 -  Visualize how proposed job roles as opposed to naming conventions reflect compensation
+<br><br>
 
-### Tools & Technologies 🧰
+## Tools & Technologies 🧰
 
 -  SQL 🧮: PostgreSQL (CTEs, joins, aggregations) 
 
@@ -172,6 +185,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  Workflow: GitHub version control, reproducible queries
 
+<br><br>
 
 ## ⚙️ How to Reproduce
 ### Requirements
@@ -183,6 +197,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  PowerBi for Visualization 
 
 -  Workspace Link -[https://lukeb.co/sql_jobs_db]-  Includes dim tables and allows queries to be run on full Database containing all 497 thousand rows of Data and also allows exporting of csv's for visual creation. 
+<br><br>
 
 ## Steps
 
@@ -202,8 +217,9 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  The remaining visuals (Dashboard, Median Hourly and Yearly Salary i.e Visual 2 on this page) were created using the Dim tables attached in the Data Source above
 
 -  Explore queries and modify filters for deeper analysis
+<br><br>
 
-### 📌 Portfolio Note
+## 📌 Portfolio Note
 
 This repository consolidates prior job-market SQL analysis and Power BI dashboard work into a single, canonical analytics project designed for portfolio and professional review.
 
