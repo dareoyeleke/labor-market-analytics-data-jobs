@@ -197,7 +197,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 <br><br> 
 
--  **The Job market can be rewarding without even earning a formal degree as shown below**
+-  **The Job market shows not all roles consider a degree as a requirement for hiring**
 
 <br>
 
@@ -205,7 +205,8 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 <br> 
 
--  Accordingto the Visuals, Data Scientists show a much higher requirement in degree procurement as a hiring requirment in about 90% of the job postings in both senior and non-senior level positions recommending degrees for those in pursuit of Data science careers is therefore necessary for job safety. Data Engineers have a 50/50 split for both senior and non-senior postings. While senior postings may also focus less on degrees and more on skillset and previous experience, the non-senior roles show at the flip of a coin, Data Engineering positions may not require a degree as a pre-requisute for hiring. Data Analysts are a little more in favor of having a degree in the job posting requirement at about a 65% rate for both senior and non-senior positions as indicated by the job postings. All in all although both senior and non-senior postings across Data analysts, scientists and engineers show similar trends for levels of seniority in degree requirements, it doesn't take into consideration job roles, or number of years of experience. 
+-  Accordingto the Visuals, Data Scientists show a much higher requirement in degree procurement as a hiring requirment in about 90% of the job postings in both senior and non-senior level positions recommending degrees for those in pursuit of Data science careers is therefore necessary for job safety. Data Engineers have a 50/50 split for both senior and non-senior postings.
+    While senior postings may also focus less on degrees and more on skillset and previous experience, the non-senior roles show at the flip of a coin, Data Engineering positions may not require a degree as a pre-requisute for hiring. Data Analysts are a little more in favor of having a degree in the job posting requirement at about a 60% rate for both senior and non-senior positions as indicated by the job postings. All in all although both senior and non-senior postings across Data analysts, scientists and engineers show similar trends for levels of seniority in degree requirements, it doesn't take into consideration job roles, or number of years of experience. 
 
 <br> 
 <img width="1920" height="1040" alt="COLUMN AND BAR VISUALS" src="https://github.com/user-attachments/assets/39d6686a-dea2-45e5-b05e-11cebe7d164f" />
