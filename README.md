@@ -193,7 +193,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
  
   <img width="184" height="245" alt="NON REMOTE ANALYST 2 0" src="https://github.com/user-attachments/assets/a3eeaf46-604c-4918-bd3a-942ecffc630f" />
 
--  Both skill sets differ from the visuals shown and while there's a huge difference in the number of postings shown as remote vs non-remote, the salary comparison for the highest and lowest postings among both classes are similar and although the non-remote posting has a top salary of $400,000, which is more than double that of the next salary for the non-remote posting at $179,000, and nearly double of the top role for the remote job at $208,000, we can conclude that basedon averages it is an outlier as even with different skill sets the rest of the salary ranges are much closer than the one outlier leads us to believe. 
+-  Both skill sets differ from the visuals shown and while there's a huge difference in the number of postings shown as remote vs non-remote, when we zone in using Data Analysts as an example,  the salary comparison for the highest and lowest postings among both classes are similar and although the non-remote posting has a top salary of $400,000, which is more than double that of the next salary for the non-remote posting at $179,000, and nearly double of the top role for the remote job at $208,000, we can conclude that basedon averages it is an outlier as even with different skill sets the rest of the salary ranges are much closer than the one outlier leads us to believe. 
 
 <br><br> 
 
