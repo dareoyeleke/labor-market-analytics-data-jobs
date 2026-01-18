@@ -1,103 +1,126 @@
-SQL Engineering for Labor Market Analytics
-
+SQL Engineering — Analytics Data Modeling & Metrics
 Overview
 
-This repository contains a set of SQL transformation and analysis scripts that model raw job posting data into analytics-ready tables and derive compensation, location, and skill-based insights.
+This repository contains a collection of SQL engineering scripts designed to transform raw job posting data into analytics-ready tables and derived metrics.
 
-The project focuses on:
+The focus of this project is SQL craftsmanship:
 
-Data cleaning and normalization
+data modeling
 
-Grain control and aggregation logic
+transformation logic
 
-Analytics-oriented SQL patterns (CTEs, window functions)
+aggregation correctness
 
-Reproducible metric generation
+temporal analysis
 
-Power BI assets are included only as downstream consumers of the SQL outputs.
+segmentation and metric design
+
+Any BI assets included in the repository are downstream consumers of the SQL layer and are not the primary artifact.
+
+Core SQL Skills Demonstrated
+Data Modeling & Transformation
+
+Staging raw data into clean, queryable structures
+
+Designing dimension and fact tables with controlled grain
+
+Normalizing inconsistent fields (roles, locations, compensation)
+
+Managing one-to-many and many-to-many relationships
+
+Aggregation & Metric Engineering
+
+Building salary and compensation metrics using explicit aggregation logic
+
+Preventing double counting through grain-aware grouping
+
+Conditional aggregation for segmented analysis (e.g. role, location, remote status)
+
+Use of median, average, and distribution-based measures
+
+Window Functions
+
+Ranking and percentile calculations for compensation analysis
+
+Salary distribution analysis using analytic functions
+
+Comparative metrics within partitions (by role, location, seniority)
+
+Date & Time Analysis
+
+Parsing and standardizing date fields
+
+Time-based aggregation (monthly / yearly groupings)
+
+Temporal trend analysis of job postings and compensation
+
+Handling incomplete or inconsistent date data
+
+Segmentation Logic
+
+Role-based and seniority-based segmentation
+
+Remote vs on-site classification
+
+Skill-based grouping and comparison
+
+Geographic segmentation for location analysis
+
+Data Quality & Assumptions
+
+Explicit handling of missing or invalid salary values
+
+Conversion of hourly compensation to annualized figures using stated assumptions
+
+Filtering outliers that materially distort aggregates
+
+Deduplication at the defined fact grain
 
 Repository Structure
 .
 ├── sql/
-│   ├── 01_stage_raw.sql
-│   ├── 02_clean_transform.sql
-│   ├── 03_dim_role.sql
-│   ├── 04_dim_company.sql
-│   ├── 05_fact_jobs.sql
-│   ├── 06_salary_metrics.sql
-│   └── 07_remote_analysis.sql
+│   ├── staging/              # raw data cleaning and normalization
+│   ├── transformations/      # dimensional and fact table logic
+│   ├── metrics/              # aggregation and analytical queries
+│   ├── segmentation/         # role, location, and skill-based analysis
+│   └── time_analysis/        # date and trend-based queries
 │
-├── data/
-│   └── sample/          # optional sample inputs
-│
-├── bi/                  # Power BI dashboards (downstream only)
-│
+├── bi/                       # downstream Power BI assets (optional)
 └── README.md
 
 
-Primary artifact: the /sql directory
-Secondary artifact: /bi (visualization only)
+Primary artifact: /sql
+All analytical outputs are derived entirely from this layer.
 
-Data Modeling Approach
+SQL Characteristics
 
-Raw job postings are first staged and normalized
+Modular, readable scripts using CTE-based pipelines
 
-Dimensional tables are built for roles, companies, locations
+ANSI-style SQL (portable across modern warehouses)
 
-A fact table captures job postings at a controlled grain
+Queries written with correctness, clarity, and debuggability in mind
 
-Metrics are derived using explicit aggregation logic to avoid double counting
+Explicit assumptions documented in logic rather than implied
 
-Design decisions emphasize correctness over convenience.
+Intended Use
 
-Key SQL Techniques Used
+This repository is intended to demonstrate SQL engineering and analytical reasoning, not visualization design or narrative reporting.
 
-Multi-step CTE pipelines for readability and debuggability
+The scripts are suitable for:
 
-Window functions for salary distribution analysis
+analytics engineering roles
 
-Conditional aggregation for remote vs on-site comparisons
+data analyst roles with strong SQL expectations
 
-Explicit handling of:
+technical interviews and SQL walkthroughs
 
-Hourly vs annual compensation
+Notes
 
-Missing or invalid salary values
+BI dashboards are included only to demonstrate downstream consumption
 
-Outliers that would distort averages
+Insights and conclusions are entirely driven by the SQL layer
 
-How to Run
-
-Load raw job posting CSVs into your SQL environment
-
-Execute scripts in numerical order (01_ → 07_)
-
-Final outputs are analytics-ready tables consumable by BI tools
-
-(SQL dialect: standard ANSI-style SQL; adaptable to Postgres / DuckDB / BigQuery)
-
-Quality & Assumptions
-
-Salary metrics are calculated only where compensation data is present
-
-Hourly wages are normalized to annual equivalents using explicit assumptions
-
-Duplicate postings are filtered at the defined fact grain
-
-Remote classification relies on source metadata and may undercount hybrid roles
-
-Limitations & Next Steps
-
-Add automated data quality tests (nulls, duplicates, distribution checks)
-
-Parameterize compensation normalization logic
-
-Extend schema to support time-series trend analysis
-
-Why This Repo Exists
-
-This project is intended to demonstrate SQL engineering and analytical reasoning, not dashboard design.
-All insights shown in BI are derived entirely from the SQL layer.
+Scripts are designed to be adapted to Postgres, DuckDB, BigQuery, or similar engines
 
 ## 📌 Portfolio Note
 
